@@ -20,29 +20,29 @@
 						<div style="padding-bottom: 20px;">
 							<strong>退款資訊：</strong><br>
 							<ul style="margin: 10px 0 10px 20px; padding:0; color:#009ef7;">
-								<li>訂單編號：[訂單編號]</li>
-								<li>退款金額：[退款金額]</li>
-								<li>退款時間：[退款時間]</li>
-								<li>退款方式：[退款方式，如銀行轉帳、信用卡退款等]</li>
+								<li>訂單編號：<span th:text="${refundInfo.orderNumber}">[訂單編號]</span></li>
+								<li>退款金額：<span th:text="${refundInfo.refundAmount}">[退款金額]</span></li>
+								<li>退款時間：<span th:text="${refundInfo.refundTime}">[退款時間]</span></li>
+								<li>退款方式：<span th:text="${refundInfo.refundMethod}">[退款方式，如銀行轉帳、信用卡退款等]</span></li>
 							</ul>
 						</div>
-						<div style="padding-bottom: 20px; color:#6c757d;">
+						<!-- <div style="padding-bottom: 20px; color:#6c757d;">
 							<strong>重要提醒：</strong><br>
 							此退款係由賣家依雙方同意之方式處理，本平台僅提供通知服務，不介入退款流程。請您確認退款是否已正確到帳，如有任何問題請直接與賣家聯繫。
-						</div>
+						</div> -->
 						<div style="padding-bottom: 20px;">
 							如有任何疑問，請聯絡客服：<br>
-							Email：<a href="mailto:service@hishops.com.tw" style="color:#009ef7;text-decoration:none;">service@hishops.com.tw</a><br>
-							電話：02-0000-0000
+							Email：<a th:href="'mailto:' + ${refundInfo.serviceEmail}" style="color:#009ef7;text-decoration:none;" th:text="${refundInfo.serviceEmail}">[serviceEmail]</a><br>
+							電話：<span th:text="${refundInfo.servicePhone}">[servicePhone]</span>
 						</div>
 						<div style="padding-bottom: 30px; color:#7E8299;">感謝您的支持，祝您購物愉快！</div>
 						<!--end:Email content-->
-						<div style="padding-bottom: 10px">好嗨商團隊 敬上。
+						<div style="padding-bottom: 10px"><span th:text="${refundInfo.teamName}">[storeName]</span> 敬上。
 						<tr>
 							<td align="center" valign="center" style="font-size: 13px; text-align:center;padding: 20px; color: #6d6e7c;">
-								<p>台北市重慶北路一段26巷9弄1號3樓</p>
+								<p th:text="${refundInfo.companyAddress}">[companyAddress]</p>
 								<p>Copyright &copy; 
-								<a href="https://www.hishops.com.tw/" rel="noopener" target="_blank">好嗨商 | HiShops</a></p>
+								<a th:href="${refundInfo.companyWebsite}" rel="noopener" target="_blank" th:text="${refundInfo.companyName}">[companyName]</a></p>
 							</td>
 						</tr></br></div>
 					</div>
