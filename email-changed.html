@@ -26,9 +26,17 @@
 								<div style="padding-bottom: 30px; font-size: 17px;">
 									<strong>您好!</strong>
 								</div>
-								<div style="padding-bottom: 20px">您的 好嗨商 HiShops 帳號 Email 已經成功更新了。</br>如果您已知曉上述資訊，請忽略這封電子郵件。</div>
-								<div style="padding-bottom: 40px">若您對此動作並不知情，請儘速聯繫我們的 
-								<a href="https://www.hishops.com.tw/" rel="noopener" target="_blank" style="text-decoration:none;color: #009ef7; font-weight: bold">客服團隊</a> 您的數位安全對我們來說非常重要!</div>
+								<div style="padding-bottom: 30px">我們收到您修改好嗨商 HiShops 登入帳號的申請，請點擊下面的按鈕完成變更生效：</br>(此確認連結將在 60 分鐘後失效)</div>
+								<div style="padding-bottom: 40px; text-align:center;">
+									<a th:href="${verificationUrl}" rel="noopener" style="text-decoration:none;display:inline-block;text-align:center;padding:0.75575rem 1.3rem;font-size:0.925rem;line-height:1.5;border-radius:0.35rem;color:#ffffff;background-color:#009ef7;border:0px;margin-right:0.75rem!important;font-weight:600!important;outline:none!important;vertical-align:middle" target="_blank">確認變更</a>
+								</div>
+								<div style="padding-bottom: 30px">若您最近沒有提出修改帳號的申請，且認為可能有人存取了您的帳號，請盡快聯繫我們的 
+								<a href="https://www.hishops.com.tw/" rel="noopener" target="_blank" style="text-decoration:none;color: #009ef7; font-weight: bold">客服團隊</a>。您的數位安全對我們來說非常重要！</div>
+								<div style="border-bottom: 1px solid #eeeeee; margin: 15px 0"></div>
+								<div style="padding-bottom: 50px; word-break: break-all; overflow-wrap: break-word;">
+									<p style="margin-bottom: 10px;">按鈕無法使用？請嘗試將以下網址複製到您的瀏覽器中：</p>
+									<a th:href="${verificationUrl}" rel="noopener" target="_blank" style="text-decoration:none;color: #009ef7">確認變更的URL連結</a>
+								</div>
 								<!--end:Email content-->
 								<div style="padding-bottom: 10px">順頌商祺,
 								<br>好嗨商團隊
