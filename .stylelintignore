@@ -1,0 +1,5 @@
+# Email templates require inline styles for email client compatibility
+# Most email clients (Gmail, Outlook, etc.) do not support external CSS files
+# Inline styles are the standard practice for email HTML templates
+*.html
+

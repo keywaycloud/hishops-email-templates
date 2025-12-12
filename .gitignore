@@ -21,4 +21,15 @@
 .DS_Store
 **/.DS_Store
 
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
 /git-stats-by-author.sh
+/internal_test/
+/STYLE_GUIDE.md
+
+mall_seller/STYLE_GUIDE.md
+.cursorrules
