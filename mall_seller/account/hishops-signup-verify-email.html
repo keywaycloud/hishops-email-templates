@@ -37,13 +37,8 @@
 							</div>
 							<div style="padding-bottom: 30px; color: #2F3044;">請點擊下方按鈕驗證您的電子郵件信箱，啟動您的帳戶。<br>啟動後在試用期間內，您可以使用我們的所有服務。</div>
 							<div style="padding-bottom: 40px; text-align:left;">
-								<a th:href="${verificationUrl}" rel="noopener" target="_blank" style="background-color:#009ef7; color:#ffffff; font-size: 14px; font-weight: 600; border-radius: 6px; padding: 11px 19px; display: inline-block; text-decoration: none;">啟動帳戶</a>
+								<a th:href="${signupVerify.verificationUrl}" rel="noopener" target="_blank" style="background-color:#009ef7; color:#ffffff; font-size: 14px; font-weight: 600; border-radius: 6px; padding: 11px 19px; display: inline-block; text-decoration: none;">啟動帳戶</a>
 							</div>
-							<!-- <div style="border-top: 1px solid #e9ecef; margin: 15px 0"></div>
-							<div style="padding-bottom: 50px; word-break: break-all; overflow-wrap: break-word; color: #2F3044;">
-								<p style="margin-bottom: 10px;">按鈕無法點擊? 請將以下網址貼到您的瀏覽器中：</p>
-								<a th:href="${verificationUrl}" rel="noopener" target="_blank" style="text-decoration:none; color: #009ef7; font-size: 14px; font-weight: 600;">啟動連結</a>
-							</div> -->
 							<!-- 聯絡資訊區塊 -->
 							<div style="padding-top: 30px; margin-top: 30px;">
 								<p style="color:#181C32; font-size: 15px; font-weight: 600; margin-bottom:10px; text-align:left;">
@@ -82,7 +77,7 @@
 				</tr>
 				<tr>
 					<td align="center" valign="center" style="font-size: 13px; text-align:center; padding: 20px; color: #6d6e7c;">
-						<p>好嗨商 | HiShops &copy; <span th:text="${#temporals.year(#temporals.now())}"></span> 是由 <a href="https://www.keywaycloud.com.tw" rel="noopener" target="_blank" style="color: #6d6e7c; text-decoration: none;">奇威雲端科技</a> 為您精心打造的電商平台。</p>
+						<p>好嗨商 | HiShops &copy; <span th:text="${signupVerify.currentYear}"></span> 是由 <a href="https://www.keywaycloud.com.tw" rel="noopener" target="_blank" style="color: #6d6e7c; text-decoration: none;">奇威雲端科技</a> 為您精心打造的電商平台。</p>
 					</td>
 				</tr>
 			</tbody>

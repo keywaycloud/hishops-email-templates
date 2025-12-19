@@ -28,7 +28,7 @@
 															<div style="font-size: 14px; font-weight: 500; margin-bottom: 27px; font-family:Arial,Helvetica,sans-serif;">
 																<p style="margin-bottom:9px; color:#181C32; font-size: 20px; font-weight:700">歡迎加入好嗨商！</br>只需幾個簡單步驟，即可開啟您的電商之旅 🚀</p>
 															</div>
-															<a href='#' target="_blank" style="background-color:#152022; border-radius:6px;display:inline-block; padding:11px 19px; color: #e7ff25; font-size: 14px; font-weight:500;">登入好嗨商</a>
+															<a th:href="${welcomeInfo.loginUrl}" target="_blank" style="background-color:#152022; border-radius:6px;display:inline-block; padding:11px 19px; color: #e7ff25; font-size: 14px; font-weight:500;">登入好嗨商</a>
 														</div>
 													</td>
 												</tr>
@@ -76,7 +76,7 @@
 						</div>
 					<tr>
 						<td align="center" valign="center" style="font-size: 13px; text-align:center;padding: 20px; color: #6d6e7c;">
-							<p>好嗨商 | HiShops &copy; <span th:text="${#temporals.year(#temporals.now())}"></span> 是由 <a href="https://www.keywaycloud.com.tw" rel="noopener" target="_blank">奇威雲端科技</a> 為您精心打造的電商平台。</p>
+							<p>好嗨商 | HiShops &copy; <span th:text="${welcomeInfo.currentYear}"></span> 是由 <a href="https://www.keywaycloud.com.tw" rel="noopener" target="_blank">奇威雲端科技</a> 為您精心打造的電商平台。</p>
 						</td>
 					</tr>
 				</td>

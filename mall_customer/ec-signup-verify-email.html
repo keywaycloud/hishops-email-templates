@@ -21,7 +21,7 @@
 							<img alt="Logo" th:src="${storeInfo.storeLogo}" style="max-width: 60px; max-height: 60px; display: block;" />
 						</td>
 						<td align="left" valign="middle">
-							<span style="font-size: 20px; font-weight: 700; color: #181C32; font-family:Arial,Helvetica,sans-serif;" th:text="${storeInfo.teamName}">[storeName]</span>
+							<span style="font-size: 20px; font-weight: 700; color: #181C32; font-family:Arial,Helvetica,sans-serif;" th:text="${storeInfo.storeName}">[storeName]</span>
 						</td>
 					</tr>
 				</table>
@@ -32,11 +32,11 @@
 				<div style="text-align:left; margin: 0 20px 0 20px; padding: 40px; background-color:#ffffff; border-radius: 6px">
 					<!--begin:Email content-->
 					<div style="padding-bottom: 30px; font-size: 17px;">
-						<strong>歡迎您註冊 <span th:text="${storeInfo.teamName}">[storeName]</span>！</strong>
+						<strong>歡迎您註冊 <span th:text="${storeInfo.storeName}">[storeName]</span>！</strong>
 					</div>
 					<div style="padding-bottom: 30px; color: #2F3044;">感謝您選擇我們！請點擊下方按鈕完成您的帳號註冊：<br>(此驗證連結將於 24 小時內失效)</div>
 					<div style="padding-bottom: 40px; text-align:left;">
-						<a th:href="${verificationUrl}" rel="noopener" style="background-color:#009ef7; color:#ffffff; font-size: 14px; font-weight: 600; border-radius: 6px; padding: 11px 19px; display: inline-block; text-decoration: none;" target="_blank">驗證我的信箱</a>
+						<a th:href="${storeInfo.verificationUrl}" rel="noopener" style="background-color:#009ef7; color:#ffffff; font-size: 14px; font-weight: 600; border-radius: 6px; padding: 11px 19px; display: inline-block; text-decoration: none;" target="_blank">驗證我的信箱</a>
 					</div>
 					<div style="padding-bottom: 30px; color: #2F3044;">驗證成功後，您將可以開始使用您的帳號，享受我們的服務與優惠！</div>
 					<!-- 聯絡資訊區塊 -->
@@ -64,7 +64,7 @@
 						</div>
 					</div>
 					<!-- 簽名區塊 -->
-					<div style="padding-top: 30px; padding-bottom: 10px; color: #2F3044;"><span th:text="${storeInfo.teamName}">[storeName]</span> 敬上。</div>
+					<div style="padding-top: 30px; padding-bottom: 10px; color: #2F3044;"><span th:text="${storeInfo.storeName}">[storeName]</span> 敬上。</div>
 					<!--end:Email content-->
 				</div>
 			</td>
