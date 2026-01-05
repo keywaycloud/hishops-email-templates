@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>您的電商平台可能即將停止運作</title>
+	<style>
+		html,body { padding: 0; margin:0; }
+	</style>
+</head>
+<body>
+	<div style="font-family:Arial,Helvetica,sans-serif; line-height: 1.5; font-weight: normal; font-size: 15px; color: #2F3044; min-height: 100%; margin:0; padding:0; width:100%; background-color:#edf2f7">
+		<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;margin:0 auto; padding:0; max-width:600px">
+			<tbody>
+				<tr>
+					<td align="left" valign="center" style="padding: 40px 20px 20px 60px;">
+						<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">
+							<tr>
+								<td align="left" valign="middle" style="padding-right: 20px;">
+									<a href="https://www.hishops.com.tw/" rel="noopener" target="_blank">
+										<img alt="Logo" width="31" height="33" src="https://s3.keywaycloud.com.tw/common/email-assets/HiShop_dark.png" style="display: block;" />
+									</a>
+								</td>
+								<td align="left" valign="middle">
+									<span style="font-size: 20px; font-weight: 700; color: #181C32; font-family:Arial,Helvetica,sans-serif;">好嗨商</span>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align="left" valign="center">
+						<div style="text-align:left; margin: 0 20px 0 20px; padding: 40px; background-color:#ffffff; border-radius: 6px">
+							<!--begin:Email content-->
+							<div style="padding-bottom: 30px; font-size: 18px; color: #181C32; font-weight: 600;">
+								<strong>您的電商平台可能即將停止運作</strong>
+							</div>
+							<div style="padding-bottom: 30px; color: #2F3044;">親愛的商家您好<br>我們的系統顯示，您的帳單編號 <strong><span th:text="${data.billId}">[帳單編號]</span></strong> 已經逾期。</div>
+							<div style="padding-bottom: 30px; color: #2F3044;">
+								<p style="margin-bottom: 15px;">如果您的信用卡已過期或遭到取消，請登入後台「帳戶管理」>「帳務管理」頁面，更換有效的信用卡：</p>
+								<div style="text-align:left;">
+									<a href="https://admin.hishops.tw/account/bill" rel="noopener" target="_blank" style="background-color:#009ef7; color:#ffffff; font-size: 14px; font-weight: 600; border-radius: 6px; padding: 11px 19px; display: inline-block; text-decoration: none;">前往帳務管理</a>
+								</div>
+							</div>
+							<div style="padding-bottom: 20px; color: #2F3044;">
+								<p style="margin-bottom: 10px; color: #d7263d; font-weight: 500;">重要提醒：如果您未能更換有效的信用卡，您的電商前台、後台管理系統、AI功能等相關服務將會終止。為了避免影響您的營運，建議您盡快完成上述操作。</p>
+							</div>
+							<div style="padding-bottom: 20px; color: #7E8299; font-size: 14px;">
+								<p style="margin-bottom: 0;">若您已完成更換有效的信用卡，請忽略本郵件。</p>
+							</div>
+							<div style="padding-top: 30px; margin-top: 30px;">
+								<p style="color:#181C32; font-size: 15px; font-weight: 600; margin-bottom:10px; text-align:left;">關於好嗨商的任何問題，歡迎隨時聯繫我們的客服團隊：</p>
+								<div style="border-top: 1px solid #e9ecef; padding-top: 10px; margin-top: 10px;">
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;">
+										<tbody>
+											<tr>
+												<td style="padding: 0 0 0 0; text-align:left;">
+													<span style="color:#7E8299; font-size: 13px; display:inline-block; width: 80px;">官方LINE：</span>
+													<a href="https://lin.ee/FgpCCk1" target="_blank" rel="noopener" style="color:#009ef7; text-decoration:none; font-size: 14px; font-weight: 600;">@322sqanl</a>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding: 0 0 0 0; text-align:left;">
+													<span style="color:#7E8299; font-size: 13px; display:inline-block; width: 80px;">聯絡電話：</span>
+													<a href="tel:0225580837" style="color:#2F3044; text-decoration:none; font-size: 14px; font-weight: 500;">02-2558-0837</a>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding: 0; text-align:left;">
+													<span style="color:#7E8299; font-size: 13px; display:inline-block; width: 80px;">客服信箱：</span>
+													<a href="mailto:services.hishops@gmail.com" style="color:#009ef7; text-decoration:none; font-size: 14px; font-weight: 600;">services.hishops@gmail.com</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div style="padding-top: 30px; padding-bottom: 10px; color: #2F3044;">好嗨商團隊 敬上。</div>
+							<!--end:Email content-->
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" valign="center" style="font-size: 13px; text-align:center; padding: 20px; color: #6d6e7c;">
+						<p>好嗨商 | HiShops &copy; <span th:text="${#temporals.year(#temporals.now())}"></span> 是由 <a href="https://www.keywaycloud.com.tw" rel="noopener" target="_blank" style="color: #6d6e7c; text-decoration: none;">奇威雲端科技</a> 為您精心打造的電商平台。</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
+
